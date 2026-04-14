@@ -6,7 +6,7 @@ export const logger = pinoHttp({
     target: 'pino-pretty',
     options: {
       colorize: true,
-      translateTime: 'HH:MM:ss',
+      translateTime: 'SYS:yyyy-mm-dd HH:mm:ss',
       ignore: 'pid,hostname',
       messageFormat: '{req.method} {req.url} {res.statusCode} - {responseTime}ms',
       hideObject: true,
